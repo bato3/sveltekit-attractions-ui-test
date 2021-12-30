@@ -16,6 +16,7 @@
 		"@sveltejs/kit": "next",
 		"@types/cookie": "^0.4.1",
 		"attractions": "^3.7.0",
+		"autoprefixer": "^10.4.1",
 		"prettier": "^2.4.1",
 		"prettier-plugin-svelte": "^2.4.0",
 		"sass": "^1.45.1",
