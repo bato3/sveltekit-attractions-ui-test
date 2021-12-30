@@ -1,6 +1,7 @@
 import adapter from '@sveltejs/adapter-auto';
 import preprocess from 'svelte-preprocess';
 import autoprefixer from 'autoprefixer';
+import path from 'path';
 
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -22,6 +23,13 @@ const config = {
 		target: '#svelte',
 
 		vite: {
+			resolve: {
+                alias: {
+                    '@lib': path.resolve('./src/lib'),
+					'@': path.resolve('./node_modules'),
+					'@bs': path.resolve('./node_modules/bootstrap/scss'),
+                }
+            },
 			css: {
 				preprocessorOptions: {
 					scss: {

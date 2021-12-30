@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+             // name and path to aliases
+            "@lib": ["src/lib"],
+            "@": ["node_modules"],
+            "@bs": ["node_modules/bootstrap/scss"],
+        }
+    },
+    "include": ["src/**/*.d.ts", "src/**/*.js", "src/*.scss", "src/**/*.scss", "src/**/*.svelte"]
+}
