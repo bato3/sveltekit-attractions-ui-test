@@ -1,5 +1,13 @@
 {
     "svelte.enable-ts-plugin": true,
     "svelte.plugin.css.globals": "node_modules/bootstrap/scss/_variables.scss, src/variables.scss",
-    "svelte.plugin.svelte.defaultScriptLanguage": "ts"
+    "svelte.plugin.svelte.defaultScriptLanguage": "ts",
+    // auto replace `${folder}` to your workspace path
+"vs-alias-jump.alias": {
+    //"@src": "${folder}/src", // relative path
+    //"$home": "/Users/blahblah/..." // absolute path
+
+			"$lib": "${folder}/src/lib",
+            "$bs": "${folder}/node_modules/bootstrap/scss",
+  }
 }

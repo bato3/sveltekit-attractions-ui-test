@@ -25,9 +25,9 @@ const config = {
 		vite: {
 			resolve: {
                 alias: {
-                    '@lib': path.resolve('./src/lib'),
-					'@': path.resolve('./node_modules'),
-					'@bs': path.resolve('./node_modules/bootstrap/scss'),
+                    //'@lib': path.resolve('./src/lib'),
+					//'@': path.resolve('./node_modules'),
+					'$bs': path.resolve('./node_modules/bootstrap/scss'),
                 }
             },
 			css: {
