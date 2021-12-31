@@ -4,10 +4,16 @@
     "svelte.plugin.svelte.defaultScriptLanguage": "ts",
     // auto replace `${folder}` to your workspace path
 "vs-alias-jump.alias": {
-    //"@src": "${folder}/src", // relative path
-    //"$home": "/Users/blahblah/..." // absolute path
-
-			"$lib": "${folder}/src/lib",
-            "$bs": "${folder}/node_modules/bootstrap/scss",
-  }
+    "$lib": "${folder}/src/lib",
+    "$bs": "${folder}/node_modules/bootstrap/scss",
+},
+"aliasJump.alias": {
+    "$bs": "/node_modules/bootstrap/scss",
+},
+"jumpToAliasFile.alias": {
+    "$bs": "D:/dev/node/layout-test/sveltekit-attractions-ui-test/node_modules/bootstrap/scss",
+},
+"alias-resolver.file": "tsconfig.json",
+"alias-resolver.type": "custom",
+"alias-resolver.accessPath": "compilerOptions.paths"
 }

@@ -1,5 +1,8 @@
 {
     "recommendations": [
-        "wudy.vs-alias-jump"
+        "wudy.vs-alias-jump",
+        "paulgui.alias-jump",
+        "svelte.svelte-vscode",
+        "mariocadenas.alias-resolver"
     ]
 }

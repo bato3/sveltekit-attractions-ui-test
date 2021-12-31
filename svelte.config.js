@@ -12,7 +12,8 @@ const config = {
     preprocess: [
         preprocess({
             scss: {
-                prependData: '@use "src/variables.scss" as *;'
+                prependData: '@use "src/variables.scss" as *;',
+
             }
         })
     ],
@@ -38,14 +39,15 @@ const config = {
                 alias: {
                     //'@lib': path.resolve('./src/lib'),
                     //'@': path.resolve('./node_modules'),
-                    '$bs': path.resolve('./node_modules/bootstrap/scss'),
+                    '$bs': path.resolve('./node_modules/bootstrap'),
                 }
             },
             css: {
                 preprocessorOptions: {
                     scss: {
                         additionalData: '@use "src/variables.scss" as *;'
-                    }
+                    },
+                        includePaths: ['./node_modules']
                 },
                 postcss: {
                     plugins: [
